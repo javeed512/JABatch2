@@ -1,0 +1,13 @@
+
+
+ CallableStatement  cstmt = conn.prepareCall("{ call mypro(?,?) }");
+		cstmt.setInt(1,101);
+		
+//register the OUT parameter before calling the stored procedure
+			cstmt.registerOutParameter(2, java.sql.Types.VARCHAR);
+
+			cstmt.executeUpdate();
+
+		String result =	cstmt.getString(2);
+
+				
