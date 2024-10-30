@@ -1,0 +1,202 @@
+
+OOPs: Object Oriented Programming Concepts
+
+1. Class and Object
+2. Inheritance
+3. Polymorphism
+4. Encapsulation
+5. Abstraction
+
+
+
+Class: It is a blue print , for which instances or objects will be created.
+-> Collections of properties and methods/behaviours  or Collection of Object
+-> Class is a reusable component.
+-> Always Create classes as public
+-> Class is imaginary in nature.
+
+
+Object: It is an instance for a class.
+
+Objects are real time entities , which exist in real world.
+Objects are use to represent  real world entities 
+Ex:  Employee,Student,Bus,Train,Flight,Account,Product,Apps
+
+
+Objects can be instantiated/created using constructors.
+Objects will be created in Heap Memory block by JVM.
+
+
+
+class Object{
+
+
+	public Object(){ // 1990s
+		
+		// create object of that child class who is calling Object();
+		// allocate memory in heap
+		// create copy of current obj instance vars
+		// initialize default values
+		// generate hashcode
+		
+
+
+	}
+
+
+
+}
+
+Overloading examples:
+-----------------------
+
+class  Demo{
+		int x;
+
+	public Demo(){
+
+	}
+
+	public Demo(int x){  // constructor overloading
+
+		this.x = x;
+	}
+
+
+
+	public int add(int a, int b){
+
+		return a+b;
+	}
+
+
+	public int add(int a, int b,int c){ // method overloading 
+
+		return a+b+c;
+	}
+
+
+}
+
+
+
+
+Polymorphism:
+---------------
+
+An single entity (object ref , class , operator ...)  behaving differently at different places
+
+Ex: Person act as  Programmer , Customer , Son , Friend
+
+1. Compile Time / Static Polymorphism
+
+Ex: Constructor Overloading , method overloading, operator overloading
+
+2. Run Time / Dynamic Polymorphism
+Ex: i. method overriding
+
+Ex: ii. when parent class object reference holding , child class object is known as Runtime POlymorphism
+   Object  obj =new String("hello");  // runtime polymorphism
+
+
+
+Person p1 = new Programmer();
+
+validatePerson(p1);
+
+
+Person p2 = new Dancer();
+
+validatePerson(p2);
+
+
+Person  p3 = new Singer();
+
+validatePerson(p3);
+
+
+
+
+
+  
+ public boolean  validatePerson(Person person){ // general purpose method
+
+
+
+ }
+
+
+
+	
+public  Object getPerson(){
+
+
+	return    new Dancer();   // new  Programmer();  // wrapping
+}
+
+
+
+Object o =  getPerson();
+
+Programmer p1 = (Programmer) o;  // unwrapping
+
+p1.coding();
+
+ Dancer  d =  (Dancer)  o;
+
+	d.dancing();
+
+
+
+
+interface:
+-----------
+End User:
+  User interface / Medium to access some set of services given by service provider to the end user.
+
+Developer:
+  Interface is nothing but , specification or requirement given to the developers for implementation.
+
+// Team Lead
+public  interface   IBank{  // specification or requirement
+
+	public abstract void  deposit();   
+	public abstract void withdraw();
+
+
+
+
+}
+
+
+// Developers
+
+public class  BankImp   implements IBank{
+
+	public void deposit(){
+
+		//logic
+	}
+
+
+	
+	public void withdraw(){
+
+		//logic
+	}
+
+
+
+}
+
+
+
+Abstraction: Hiding implementation code , and highlighting set of services.
+
+Abstraction =  interfaces + abstract classes
+
+
+
+
+
+
