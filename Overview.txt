@@ -1,0 +1,187 @@
+Lab Time: 11:35am to 12pm
+
+Revise and Practice:
+---------------------
+
+OOPs Concepts
+
+Inheritance
+Polymorphism
+Encapsulation
+Abstraction
+
+Access modifiers 
+public > protected > default > private
+
+Go through BankApplication.
+
+what is interface?
+what is abstract class?
+
+default and static methods in interface
+
+
+
+
+
+API - Application Programming Interface
+
+JDBC API/Library
+
+String API
+
+DateTime API
+
+
+
+Framework --> set of APIs
+
+Collection Framework
+
+List API
+
+Set API
+
+Queue API
+
+Map API
+
+
+
+
+
+
+
+
+
+
+Lunch Time:
+1:35pm to 2:35pm
+
+Lab Time:
+
+2:35pm to 3pm
+
+Revise and Practice
+
+List , Set , Map
+
+ArrayList
+HashSet
+TreeSet
+Comparator
+Iterator
+
+HashMap
+TreeMap
+
+
+
+
+
+class  Object{
+
+
+equals() // it references or hashcodes
+
+int hashcode(){
+
+return numbers;
+}
+
+String toString(){
+
+	// pkg.classname@+hashcode()+Hexadecimal;
+
+	return  com.hexaware.Employee@abe1235
+
+}
+
+
+
+}
+
+
+
+
+case1
+
+insert into Emp_Info(eid,ename,salary,doj)   values(?,?,?,?);
+
+case3
+
+update  Emp_Info  set   ename =? , salary =? , doj =?  where eid =?;
+
+
+
+ 
+select * from Emp_info  where eid = ?;
+
+delete from Emp_info where eid =?;
+
+
+
+
+Employee_Table
+
+eid emp_name  sal   doj   dno
+
+
+
+
+Dept_Table
+
+dno  dname  location
+
+
+
+class Dept{
+    private int dno;  // p.k
+    private String dname;
+    private String location;
+
+
+}
+
+
+
+
+
+class Employee{
+
+	private int eid;  // empId ,  employeeId   , emp_id
+	private  String empName;
+	private  double salary;
+	private  Date doj;
+	private int dno; // f.k
+
+	List<Address> addresses; // one to many
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
