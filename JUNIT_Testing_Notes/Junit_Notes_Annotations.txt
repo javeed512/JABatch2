@@ -1,0 +1,121 @@
+
+Unit Testing:
+
+Testing individual unit (functions,methods,sub-programs,class,web page)
+to check its working as per the given specification/requirement or not.
+
+-> Unit Testing help us to check functions is running as required
+-> Unit Testing help us to find bugs/errors.
+-> Unit Testing help us to ensure software quality.
+
+Unit Testing approach is also known as TDD (Test Driven Development)
+
+
+
+Requirement:
+
+Task: Addition 2 Integers
+
+add(int,int);
+
+
+Test Cases:
+1.  (4,5)  ---> 9
+2.  (5,0)  ---> 5
+3.  (-3,-6) ---> -9
+4.  (_ , _) ---> _ 
+5.  (6,a) ---> invalid input
+6. (-1,101)
+
+
+NOte: In real time first we write test cases and based on test cases actual coding will be implemented by developer this approach is known as Test Driven Developement (TDD).
+
+
+org.junit.jupiter.api.Assertions;
+
+class Assertions:
+----------------
+
+static methods
+
+assertEquals()
+assertNotEquals()
+assertTrue()
+assertFalse()
+assertNull()
+assertNotNull()
+assertSame()
+
+
+Annotations in Junit5:
+----------------------
+@Test: Its compulsory and test method will be executed if and only if this annotation is used.
+
+@DisplayName: To display custom name for test class or  methods
+
+@BeforeAll: Any code which need to execute only once before all test cases should be used under method using this annotation.
+
+@AfterAll: Any code which need to execute only once after all test cases should be used under method using this annotation.
+
+@Before: any method with this annotation executed before each testcase method executes once.
+@After: any method with this annotation executed after each testcase method executes once.
+
+@Disabled: it is used to disable or block any test method execution.
+
+@ParameterizedTest: it is just like @Test  to run Test method with parameters
+
+Note: While using @ParameterizedTest , dont use @Test annotation
+
+@ValueSource: it is used to supply set of inputs to run particular test case 
+
+Example:
+
+@ParameterizedTest
+@ValueSource(strings = { "javeed", "narayana", "pushpalatha", "himanshu" })
+
+	void test(String name) {
+
+		System.out.println(name + "name tested");
+		assertTrue(name.length() > 5);
+
+	}
+
+
+@RepeatTest: to execute test case repeatedly.
+Ex: @RepeatedTest(3): it executes test 3 times , no need of @Test here
+
+@Tag: to tag test methods for grouping or filter them using tag names during integration testing or bulk testing(TestSuites) in Java , Selenium , TestNG
+
+
+
+@Nested: it is used with inner classes to be test in java and cannot be used for static class or static methods
+
+
+
+Extra:
+------
+
+
+
+
+@ExtendWith: to use any third party extensions(classes) to be use in Junit
+
+@TestFactory: it is used when we want to write bulk of test cases in single test method which should return Single object/result. This type of methods are known as factory method
+
+Note: here test method should return single object of TestCase type not normal java object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
