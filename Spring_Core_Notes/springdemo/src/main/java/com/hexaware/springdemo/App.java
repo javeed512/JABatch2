@@ -2,8 +2,11 @@ package com.hexaware.springdemo;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+
+import com.hexaware.springdemo.service.EmployeeServiceImp;
 
 /**
  *Spring Demo
@@ -13,6 +16,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan("com.hexaware.springdemo")
 public class App {
+	
+	
 	public static void main(String[] args) {
 
 		ApplicationContext context = new AnnotationConfigApplicationContext(App.class);
@@ -25,5 +30,38 @@ public class App {
 
 		Employee e2 = context.getBean(Employee.class);
 		System.out.println(e2);
+		
+		
+			EmployeeServiceImp  service =	  context.getBean(EmployeeServiceImp.class);
+		
+			System.out.println("service object in main() "+ service);
+		
+		
+			service.displayService();
+			
 	}
+	
+	
+	
+	@Bean
+	public   Thread   getThread() {
+		
+		
+		return new Thread();
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
