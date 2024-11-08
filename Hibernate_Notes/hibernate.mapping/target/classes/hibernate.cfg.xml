@@ -29,6 +29,11 @@
 		
 		<mapping  class="com.hexaware.hibernate.mapping.entity.Department"  />  
 		<mapping  class="com.hexaware.hibernate.mapping.entity.Employee"  /> 
+		
+		<!-- many to many Mapping model/entity class  having annotations   -->
+		
+		<mapping  class="com.hexaware.hibernate.mapping.entity.Product"  />  
+		<mapping  class="com.hexaware.hibernate.mapping.entity.Order"  /> 
 	
 
 	</session-factory>
