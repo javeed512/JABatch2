@@ -3,10 +3,23 @@ package com.hexaware.orm.entity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="emp_table")
+
+@NamedQueries(
+			
+		{
+			@NamedQuery(name="getAllEmployees" , query ="select e from Employee e"),
+			@NamedQuery(name="getByEname" , query ="select e from Employee e  where e.ename = :name")
+			
+			
+		}
+		
+		)
 public class Employee {  // entity
 
 	@Id

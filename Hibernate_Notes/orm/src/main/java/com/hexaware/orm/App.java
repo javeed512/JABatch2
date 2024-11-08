@@ -27,11 +27,11 @@ public class App {
 		
 		  Transaction tr = session.beginTransaction();
 		  // insert or update operations
-			/*
-			 * Employee emp = new Employee(202, "Javeed", 50000);
-			 * 
-			 * session.saveOrUpdate(emp);
-			 */
+			
+			  Employee emp = new Employee(205, "Adam", 30000);
+			  
+			  session.saveOrUpdate(emp);
+			 
 		  
 		 // session.persist(emp);
 		  
@@ -40,13 +40,14 @@ public class App {
 		  	//	System.out.println("record affected "+ser.toString());
 		  
 		  // select by eid 
-		  	Employee e1 =	session.get(Employee.class,201);// select by eid
-		 
-		  	System.out.println(e1);
-		  
-		  
-		  		session.delete(e1);  // deleting 201 record from table
-		  
+			/*
+			 * Employee e1 = session.get(Employee.class,201);// select by eid
+			 * 
+			 * System.out.println(e1);
+			 * 
+			 * 
+			 * session.delete(e1); // deleting 201 record from table
+			 */
 		  tr.commit();
 		  
 		  
