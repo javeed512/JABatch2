@@ -2,6 +2,11 @@ package com.hexaware.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
+
+import com.hexaware.entity.Employee;
+import com.hexaware.service.EmployeeServiceImp;
+import com.hexaware.service.IEmployeeService;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -15,12 +20,16 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet("/EmployeeServlet")
 public class EmployeeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
+	private  IEmployeeService service;
 
     /**
      * Default constructor. 
      */
     public EmployeeServlet() {
-        // TODO Auto-generated constructor stub
+
+    		service = new EmployeeServiceImp();
+    	
     }
 
 	/**
@@ -33,7 +42,46 @@ public class EmployeeServlet extends HttpServlet {
 							response.setContentType("text/html");
 			
 					out.print("Hello Friends!");
-					out.print("<h1>WELCOME TO SERVLET</h1>");
+					out.print("<h1 style='background-color:red'>WELCOME TO SERVLET</h1>");
+					
+					
+		String key = request.getParameter("add");
+					
+				
+
+			if( key != null) {
+				
+				int eid = Integer.parseInt(request.getParameter("eid"));
+				
+				String ename =		request.getParameter("ename");
+				
+				double  salary  =  Double.parseDouble(request.getParameter("salary"));
+		
+				Employee emp = new Employee(eid, ename, salary);
+		
+				out.print(emp);
+				
+				// service.addEmp(emp);  // --> dao.addEmp(emp);  ---> JDBC ---> DB
+				
+			int count =	service.addEmployee(emp);
+				
+			out.print(count +"  Record inserted successfully..");
+				
+			}
+			
+			else {
+				
+				
+				
+			List<Employee>  list =	service.getAllEmployees();
+				
+				
+					list.forEach((e1)->{  out.print(e1 +"<br>"); });
+			
+				
+			}
+					
+			
 	}
 
 	/**

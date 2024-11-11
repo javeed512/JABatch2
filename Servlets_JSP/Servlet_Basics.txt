@@ -1,0 +1,83 @@
+
+
+Types of Applications:-
+=======================
+1. Console or Desktop Application 
+	JSE / Core Java
+
+Ex: Notepad , paint , MS Office , O.S , Eclipse ,Calculator , Git client , maven 
+
+Product based company : Microsoft , Oracle , Apache , Vmware , Facebook , Google , Apple 
+
+2. Web / Enterprise Applications/softwares
+    JEE / Advance Java
+  (Servlets , JSP , Spring , Microservice , Cloud , Security , JMS ....)
+ 
+
+Ex: Any Website , Google , Facebook , Hexaware website , College Website
+
+Web / Application Server
+
+Server Examples:  Apache Tomcat server , Weblogic , GlassFish , Resin , RedHat Server 
+
+3. Mobile   Console or Web  Applications
+
+
+
+Servlet API:
+-----------
+javax.servlet.*;
+
+Interfaces:
+-----------
+Servlet
+ServletRequest
+ServletResponse
+RequestDispatcher
+ServletConfig
+
+class:
+GenericServlet
+
+javax.servlet.http;
+
+Interfaces:
+-----------
+HttpServletRequest
+HttpServletResponse
+HttpSession
+
+Classes:
+--------
+HttpServlet
+Cookie
+
+
+class HelloServlet   extends  HttpServlet{
+
+
+	// init() , service() , destroy()
+
+	doGet(request , response){
+
+
+	}
+
+
+	doPost(request , response){
+
+	}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
