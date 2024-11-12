@@ -8,11 +8,13 @@ import com.hexaware.entity.Employee;
 import com.hexaware.service.EmployeeServiceImp;
 import com.hexaware.service.IEmployeeService;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class EmployeeServlet
@@ -46,7 +48,12 @@ public class EmployeeServlet extends HttpServlet {
 					
 					
 		String key = request.getParameter("add");
-					
+				
+		
+			RequestDispatcher rd =	request.getRequestDispatcher("/view/success.jsp");
+			
+				
+				HttpSession session =	request.getSession();
 				
 
 			if( key != null) {
@@ -76,9 +83,12 @@ public class EmployeeServlet extends HttpServlet {
 			List<Employee>  list =	service.getAllEmployees();
 				
 				
-					list.forEach((e1)->{  out.print(e1 +"<br>"); });
+				//	list.forEach((e1)->{  out.print(e1 +"<br>"); });
 			
-				
+					session.setAttribute("empList", list );
+			
+				rd.forward(request, response);
+					
 			}
 					
 			
