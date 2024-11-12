@@ -1,0 +1,30 @@
+
+Spring Framework Annotations:
+
+
+Annotation which instruct IOC to create object.
+Stereo Type:
+-------------
+@Component  (use for component class/pojo/bean class)
+@Service      (use for service class)
+@Repository   (use for repository or DAO)
+@Controller   (use for controllers or servlets)
+
+@Bean
+@Configuration
+
+
+@Autorwire  (it performs auto-wiring or DI )
+
+
+@ComponentScan 
+ (to scan packages to identify beans for which objects need to be created and autowiring need to perform)
+
+@Scope 
+default scope is 1.singleton 
+2.prototype 
+3.request
+4.session
+5.application
+
+

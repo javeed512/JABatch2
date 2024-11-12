@@ -1,0 +1,8 @@
+package com.hexaware.springboot1.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class HelloController {  // controller or servlet
+
+}
