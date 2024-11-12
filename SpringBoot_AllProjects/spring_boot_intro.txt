@@ -1,0 +1,31 @@
+
+
+
+1. Web Server (Tomcat server)  install
+2. xml as config files  web.xml in servlets or hibernate.cfg.xml in hibernate
+3. jars files
+4. maven software
+5. searching dependencies for maven pom.xml
+6. plugins and Dev tools
+7. External Database (mysql) installation
+
+
+Vmware and Pivatol :
+---------------------
+
+Spring Boot Project/Product
+
+1. Spring Boot projects can be created using 
+ i. Command Line ii. STS Eclipse  iii. Online Spring Initializr (spring.io)
+2. It does not support XML config instead , it supports properties or yml files.
+3. It has Embedded Tomcat Server
+4. It has Embedde H2 database (optional)
+5. It provides starter option to select any maven dependencies required for the project
+6. It does not support JSP directly (need to add some dependency)
+7. It supports JSON data format instead of XML Data format (need to add xml dependency for xml data)
+8. It is used to create any type of java project  
+	ex: console , web ,enterprise , mobile apps etc
+9. It has embedded maven software
+10. It supports all spring products (springframework , springmvc , springcloud, springsecurity,hibernate jpa etc)
+
+
