@@ -1,0 +1,106 @@
+
+
+Web Application limitations:
+---------------------------
+SERVLET + JSP  or  Spring Web MVC
+1.Front end (HTML,CSS,JS,JSP) and Backend(Java code) available in same project
+2. Difficulty in maintenance
+3. Web applications support only Text , HTML  , XML data formats
+4. Web apps works only for Http  GET and POST
+5. Web apps need external servers 
+
+Annotations used in Spring Web MVC:
+------------------------------------
+@Controller
+@RequestMapping (GET,POST)
+@ModelAttribute
+@ResponseBody 
+
+
+
+RestFul  Web Application:
+--------------------------
+1. Only Java backend code will be implemented with data (not html or front end code) 
+2. REST applications supports all data formats 
+	Text , HTML ,XML , JSON , PDF , Images , URL  etc
+3. It support Http  GET , POST , PUT , DELETE 
+4. REST Application work on  rest api concepts where we can execute any functionality just by 
+         sending a simple request from browser
+5. Spring Boot can be used to create Spring Restful Web MVC Application
+Note: Restful application will not have any Front end code in Java Spring Projects instead
+	we create seperate UI/Front end projects using UI Frameworks like Angular,Reactjs etc
+
+
+Annotations in Spring REST App
+------------------------------
+@RestController (@Controller + @ResponseBody)
+@RequestMapping
+
+@GetMapping
+@PostMapping
+@PutMapping
+@DeleteMapping
+
+@RequestBody
+@PathVariable
+
+
+
+XML:
+-----
+What is XML?
+XML stands for eXtensible Markup Language
+XML is a markup language much like HTML
+XML was designed to store and transport data
+XML was designed to be self-descriptive
+XML is a W3C Recommendation
+
+
+
+<employee>
+	<eid>101</eid>
+	<ename>king</ename>
+	<salary>5000</salary>
+	<city pincode='500050' >Hyderabad</city>
+
+</employee>
+
+JSON:
+=====
+JSON stands for JavaScript Object Notation
+
+JSON is a text format for storing and transporting data
+
+JSON is "self-describing" and easy to understand
+
+
+ employee:{
+	   "eid":101,
+	   "ename":"king",
+	   "salary":50000
+	}
+
+  employee.eid  , employee.ename
+
+
+
+JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa). You'll come across it quite often, so in this article, we give you all you need to work with JSON using JavaScript, including parsing JSON so you can access data within it, and creating JSON.
+
+
+Ex:
+Employee Data in JSON Format
+
+"employee":{
+
+"eid":101,
+"ename":"king",
+"salary":50000,
+"address":{
+	   "aid":21,
+	   "city":"hyderabad"
+         }
+}
+
+
+
+
