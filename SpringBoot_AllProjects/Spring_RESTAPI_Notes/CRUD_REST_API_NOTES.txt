@@ -1,0 +1,58 @@
+
+
+CRUD 
+-------
+
+
+
+
+POST
+Employee emp ---> insert  into employees(eid,ename,salary)  values(?,?,?) 
+
+PUT
+Employee emp ---> update employees set ename =? , salary =? where eid =?;
+
+
+
+DELETE
+delete by eid   
+   delete from Employees where eid = ?;
+delete by ename
+   delete from Employees where ename = ?;
+
+GET
+select by id
+  select * from Employees where eid = ?;
+select by ename
+  select * from Employees  where ename = ?;
+
+select all
+  select * from Employees;
+
+PATCH --> it is use for partial update 
+
+
+
+
+@RequestBody
+------------
+It is used to read data from request body while using POST or PUT methods
+
+http://localhost:8080/api/employees/add 
+
+@PathVariable
+--------------
+It is used to read parameters/variable values from URL path
+
+http://localhost:8080/api/employee/delete/101
+
+http://localhost:8080/api/employee/get/101
+
+
+
+
+
+
+
+
+
