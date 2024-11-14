@@ -22,7 +22,7 @@ public class EmployeeRestController {
 	@Autowired
 	IEmployeeService service;
 
-	@PostMapping("/add")
+	@PostMapping(value="/add",consumes = "application/json",produces = "application/json")
 	public Employee insertEmployee(@RequestBody Employee emp) {
 
 		return service.addEmployee(emp);
@@ -44,7 +44,7 @@ public class EmployeeRestController {
 		
 	}
 	
-	@GetMapping("/getall")
+	@GetMapping(value="/getall",produces = "application/json")
 	public List<Employee>  getAll(){
 		
 		
@@ -86,7 +86,7 @@ public class EmployeeRestController {
 	}
 	
 	@GetMapping("/getsalarybyrange/{min}/{max}")
-	public List<Employee>  getBySalarySorted(@PathVariable double min , @PathVariable double max){
+	public List<Employee>  getBySalaryRange(@PathVariable double min , @PathVariable double max){
 		
 		
 		return service.getBySalaryRange(min, max);
@@ -102,6 +102,23 @@ public class EmployeeRestController {
 	 return  count + " record deleted";
 		
 	}
+	
+	
+	
+	  @PutMapping("/updatesalary") public int updateSalary(@RequestBody Employee
+	  emp) {
+	  
+	  return service.updateSalary(emp.getSalary(),emp.getEid()); 
+	  
+	  }
+	 
+	
+	@PutMapping("/updatesalary/{sal}/{id}")
+	public int updateSalary(@PathVariable  double sal,  @PathVariable  long id) {
+		
+		return   service.updateSalary(sal, id);
+	}
+	
 	
 	
 

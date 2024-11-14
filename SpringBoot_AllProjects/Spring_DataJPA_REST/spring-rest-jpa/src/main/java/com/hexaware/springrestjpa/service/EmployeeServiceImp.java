@@ -92,10 +92,15 @@ public class EmployeeServiceImp implements IEmployeeService {
 	}
 
 	@Override
-
 	public int deleteByEname(String ename) {
 	
 		return repo.deleteByEname(ename);
+	}
+
+	@Override
+	public int updateSalary(double sal, long id) {
+		
+		return   repo.updateSalary(sal, id);
 	}
 
 }

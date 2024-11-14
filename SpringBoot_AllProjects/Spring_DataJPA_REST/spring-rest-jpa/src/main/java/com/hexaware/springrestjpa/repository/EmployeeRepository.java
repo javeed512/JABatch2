@@ -26,20 +26,7 @@ public interface EmployeeRepository extends  JpaRepository<Employee, Long> {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-			@Query("select e from Employee e where  e.salary Between ?1 and ?2")// JPL QUERY			
+			@Query("select e from Employee e where  e.salary Between ?1 and ?2")// JPQL QUERY			
 			List<Employee>  getBySalRange(double min, double max);		
 		
 		
@@ -47,7 +34,9 @@ public interface EmployeeRepository extends  JpaRepository<Employee, Long> {
 			@Query("delete from Employee e where e.ename =?1")
 			int  deleteByEname(String ename);
 				
-			
+			@Modifying
+			@Query("update Employee e set  e.salary = :sal   where  e.eid = :id")
+			int  updateSalary(double sal , long  id);    
 			
 			
 }

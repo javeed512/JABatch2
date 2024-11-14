@@ -1,0 +1,65 @@
+
+Assingment Practice:
+
+Consider any one Entity from case study
+Create Spring Data JPA 
+
+CRUD Operation
+
+INSERT
+UPDATE
+DELETE
+findAll by sorted
+findBy Id
+findBY any property
+
+findBy any property GreaterThan or LessThan
+
+Revise HQL/JPQL concepts
+
+Write custom queries in above  Repository
+JPQL  i. select   ii. DML (update,delete)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===========================
+
+
+Create Spring Boot project 
+dependencies: spring web , mysql , spring data jpa , open-api (swagger-ui)
+
+1. Create Project and  Empty packages and push project to Github
+2. Create Entity classes (validations also) and Repository 
+3. Mappings for all entities *****
+4. Service Interface with abstract methods and implementation classes
+

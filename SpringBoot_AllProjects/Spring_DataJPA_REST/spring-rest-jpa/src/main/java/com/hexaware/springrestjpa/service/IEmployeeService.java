@@ -44,6 +44,9 @@ public interface IEmployeeService {
 	public int  deleteByEname(String ename);
 	
 	
+	int  updateSalary(double sal , long  id);  
+	
+	
 	
 	
 	
