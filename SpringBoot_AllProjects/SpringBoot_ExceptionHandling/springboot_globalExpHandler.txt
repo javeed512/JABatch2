@@ -1,0 +1,26 @@
+
+Spring Boot Implicit Exception Handling:
+===========================================
+
+SpringBoot Exceptional Hanlding is used to handle exceptions in restful applications locally as well as globally.
+
+@RestController  (or)
+@RestControllerAdvice  ---> it is used for creating global exception handler class in springboot.
+
+
+@ExceptionalHandler(ArithmeticException.class)   ---> it is used on methods to handle exceptions
+public ResponseEntity<String>  handleExp(Exception e){
+
+
+return  new ResponseEntity<String>("sorry you cannot div num by zero",HttpStatus.BAD_REQUEST);
+
+}
+
+
+
+@ExceptionalHandler(ArithmeticException.class)
+@ResponseStatus(code,msg)
+public void  handleExp(Exception e){
+
+
+}
