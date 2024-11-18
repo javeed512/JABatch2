@@ -1,0 +1,31 @@
+
+
+Case Studies Project work for weekend:
+--------------------------------------
+
+completed 
+1. SpringBoot Project created with all required dependencies and packages
+2. All Entities are created 
+3. All Repositories(interfaces) are created for above entities 
+4. Service interfaces created
+5. Empty implementations for services done
+
+
+need to complete:
+-------------------
+
+1. Add Mappings to the entities where ever required ********
+2. Service implementation classes for all business logics
+3. Use Spring input validations for all entities as per requirement
+4. Create Custom Exceptions for your modules and handle them using try-catch and
+    Spring Global Exception Handler using  @RestControllerAdvice and @ExceptionHandler
+
+
+Revision and Practice on weekend:
+---------------------------------
+1.Spring Restful API Crud operations
+2. Custom Repository  CRUD Operations , @Query  , finder methods
+3. Spring Input validation
+4. Global exception handling in SpringRestful Application
+
+
