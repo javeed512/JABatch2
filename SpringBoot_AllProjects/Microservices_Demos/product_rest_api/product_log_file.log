@@ -1,0 +1,31 @@
+[32m2024-11-19 10:51:09.246[0;39m [INFO] com.hexaware.restapi.ProductRestApiApplication [main] Starting ProductRestApiApplication using Java 23.0.1 with PID 16416 (D:\JABatch2_LocalRepo\SpringBoot_AllProjects\Microservices_Demos\product_rest_api\target\classes started by DELL in D:\JABatch2_LocalRepo\SpringBoot_AllProjects\Microservices_Demos\product_rest_api)
+[32m2024-11-19 10:51:09.251[0;39m [INFO] com.hexaware.restapi.ProductRestApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+[32m2024-11-19 10:51:10.780[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2024-11-19 10:51:10.873[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interface.
+[32m2024-11-19 10:51:11.787[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port 8282 (http)
+[32m2024-11-19 10:51:11.803[0;39m [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+[32m2024-11-19 10:51:11.804[0;39m [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.16]
+[32m2024-11-19 10:51:11.910[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+[32m2024-11-19 10:51:11.911[0;39m [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2546 ms
+[32m2024-11-19 10:51:12.148[0;39m [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2024-11-19 10:51:12.238[0;39m [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.3.1.Final
+[32m2024-11-19 10:51:12.297[0;39m [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+[32m2024-11-19 10:51:12.709[0;39m [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+[32m2024-11-19 10:51:12.751[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+[32m2024-11-19 10:51:13.914[0;39m [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@194b9783
+[32m2024-11-19 10:51:13.918[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+[32m2024-11-19 10:51:15.464[0;39m [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[32m2024-11-19 10:51:15.576[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2024-11-19 10:51:16.164[0;39m [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2024-11-19 10:51:16.849[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port 8282 (http) with context path ''
+[32m2024-11-19 10:51:16.865[0;39m [INFO] com.hexaware.restapi.ProductRestApiApplication [main] Started ProductRestApiApplication in 8.205 seconds (process running for 9.617)
+[32m2024-11-19 10:53:29.655[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8282-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[32m2024-11-19 10:53:29.656[0;39m [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8282-exec-2] Initializing Servlet 'dispatcherServlet'
+[32m2024-11-19 10:53:29.660[0;39m [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8282-exec-2] Completed initialization in 2 ms
+[32m2024-11-19 10:54:34.845[0;39m [INFO] com.hexaware.restapi.restcontroller.ProductRestController [http-nio-8282-exec-6] I am info
+[32m2024-11-19 10:54:34.845[0;39m [WARN] com.hexaware.restapi.restcontroller.ProductRestController [http-nio-8282-exec-6] I am warning
+[32m2024-11-19 10:54:34.846[0;39m [ERROR] com.hexaware.restapi.restcontroller.ProductRestController [http-nio-8282-exec-6] I am error
+[32m2024-11-19 11:40:07.929[0;39m [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(52)-127.0.0.1] Application shutdown requested.
+[32m2024-11-19 11:40:07.941[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(52)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2024-11-19 11:40:07.944[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(52)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+[32m2024-11-19 11:40:07.952[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(52)-127.0.0.1] HikariPool-1 - Shutdown completed.

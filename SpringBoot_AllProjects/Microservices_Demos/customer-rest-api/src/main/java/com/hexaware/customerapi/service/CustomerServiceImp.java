@@ -64,7 +64,7 @@ public class CustomerServiceImp implements ICustomerService {
 		// step2 call rest api from product microservice int pid
 		// =customer.getProductId();
 		// Product // http://localhost:8282/api/products/get/{pid}
-
+  // accessing product microservice
 		Product product = restTemplate.getForObject("http://localhost:8282/api/products/get/" + pid, Product.class);
 
 		CustomerProductVO customerProductVO = new CustomerProductVO();
