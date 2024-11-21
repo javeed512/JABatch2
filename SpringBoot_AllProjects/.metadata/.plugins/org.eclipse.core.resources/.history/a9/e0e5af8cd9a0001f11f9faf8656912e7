@@ -1,8 +1,0 @@
-package com.hexaware.springboot1.entity;
-
-import org.springframework.stereotype.Component;
-
-@Component
-public class Employee {
-
-}

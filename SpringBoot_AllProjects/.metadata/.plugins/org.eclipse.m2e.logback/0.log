@@ -4942,3 +4942,5 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.to
 2024-11-19 15:46:18,664 [Worker-12: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/batch/spring-batch-test/5.1.2/spring-batch-test-5.1.2-javadoc.jar
 2024-11-19 15:46:18,753 [Worker-12: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/batch/spring-batch-test/5.1.2/spring-batch-test-5.1.2-javadoc.jar
 2024-11-19 15:46:18,763 [Worker-12: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded javadoc for org.springframework.batch:spring-batch-test:5.1.2
+2024-11-19 16:20:14,131 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@573f8f15{STOPPING}[12.0.12,sto=0]
+2024-11-19 16:20:14,146 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@726b52b5{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
